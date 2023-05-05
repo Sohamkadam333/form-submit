@@ -13,7 +13,7 @@ const cors = require('cors');
 const users = [
 	{
 		uname: 'john123',
-		password:'snfdk891328e0',
+		password: 'snfdk891328e0',
 	},
 ];
 
@@ -37,7 +37,7 @@ app.post('/post-users', (req, res) => {
 	const newUser = {
 		id: uuidv4(),
 		uname,
-		passowrd,
+		password,
 	};
 	users.push(newUser);
 	// res.send('User Added Successfully');
