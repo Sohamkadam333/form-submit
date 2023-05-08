@@ -40,7 +40,7 @@ app.post('/post-users', (req, res) => {
 		password,
 	};
 	users.push(newUser);
-	// res.send('User Added Successfully');
+	res.json({message:'User Added Successfully'});
 });
 
 app.get('/users', (req, res) => {
